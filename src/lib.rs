@@ -92,7 +92,7 @@ impl Fire {
                     continue;
                 }
 
-                //  catch overflo
+                //  catch overflow
                 if below_intensity > decay {
                     cells[current_index - offset] = below_intensity - decay;
                 } else {
