@@ -5,3 +5,5 @@
 
 ## toolz 🔧
 ### [wasm-pack](https://github.com/rustwasm/wasm-pack)
+
+![](fire.gif)
