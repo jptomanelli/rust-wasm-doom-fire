@@ -86,14 +86,15 @@ impl Fire {
 
                 let below_intensity = self.cells[below_index];
                 let decay = js_sys::Math::floor(js_sys::Math::random() * 3.0) as u8;
+                let offset = js_sys::Math::floor(js_sys::Math::random() * 2.0) as usize;
 
                 if below_index >= (self.width * self.height) as usize {
                     continue;
                 }
 
-                //  catch overflow
+                //  catch overflo
                 if below_intensity > decay {
-                    cells[current_index] = below_intensity - decay;
+                    cells[current_index - offset] = below_intensity - decay;
                 } else {
                     cells[current_index] = 0;
                 }

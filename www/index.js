@@ -46,7 +46,7 @@ class DoomAnimation {
         this.canvas.style.height = '100%';
         this.canvas.width = canvas.offsetWidth;
         this.canvas.height = canvas.offsetHeight;
-        this.pixelSize = 8;
+        this.pixelSize = 4;
     }
 
     setFireObject() {
